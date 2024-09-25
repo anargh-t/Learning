@@ -32,11 +32,10 @@ for ep in range(epoch):
     #     print()
     # print('---')
 
-# Given inputs for prediction
-test_inputs = [[0, 0], [0, 1], [1, 0], [1, 1]]
+#prediction
+test_inputs = [[1, 0], [0, 1], [0, 0], [1, 1]]
 predictions = []
 
-# Calculate predictions for each test input
 for inp in test_inputs:
     z = w1 * inp[0] + w2 * inp[1] + b
     if z >= 0:
