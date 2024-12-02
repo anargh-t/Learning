@@ -12,7 +12,6 @@ for ep in range(epoch):
     # print("Epochs:", ep)
     for i in range(len(x)):
         z = w1*x[i][0] + w2*x[i][1] + b
-        # print("z",z)
 
         if z>=0:
             y_pred = 1
@@ -25,12 +24,6 @@ for ep in range(epoch):
         w2 = w2 + (lr * er * x[i][1])
         b = b + (lr * er)
 
-    #     print('y_pred:',y_pred)
-    #     print("w1:",w1)
-    #     print("w2:",w2)
-    #     print("b:",b)
-    #     print()
-    # print('---')
 
 #prediction
 test_inputs = [[1, 0], [0, 1], [0, 0], [1, 1]]

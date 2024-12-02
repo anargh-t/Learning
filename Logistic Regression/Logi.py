@@ -52,6 +52,9 @@ print("New Data Dosages:", new_data)
 print("Predicted Probabilities for New Data:", new_p_cure)
 print("Predicted Classes for New Data (1=Cured, 0=Not Cured):", predictions)
 
+
+
+
 # Plot predictions and logistic curve for new data
 plt.figure(figsize=(10, 6))
 
